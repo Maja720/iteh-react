@@ -8,6 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<GrafikStrana />} />
+        <Route path='/kalkulator' element={<KalkulatorStrana />} />
       </Routes>
     </BrowserRouter>
   );

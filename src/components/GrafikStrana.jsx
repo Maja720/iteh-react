@@ -4,7 +4,7 @@ import Formula from './Formula';
 import Navbar from './Navbar';
 
 export default function GrafikStrana() {
-  const [podaci, setPodaci] = useState([1, 0, 0]);
+  const [podaci, setPodaci] = useState([1, 0, 0, 0]);
   const onChange = index => value => {
     setPodaci(prev => {
       const novoStanje = [...prev];
@@ -18,7 +18,7 @@ export default function GrafikStrana() {
       let val = i / 100
       tacke.push({
         x: val,
-        y: podaci[0] * val * val + podaci[1] * val + podaci[2]
+        y: podaci[0] * val * val * val + podaci[1] * val * val + podaci[2] * val + podaci[3]
       })
     }
     return tacke;
